@@ -1,19 +1,3 @@
-const assertArraysEqual = function(firstArray, secondArray) {
-  let trueOrFalse = true;
-  if (firstArray.length !== secondArray.length) {
-    trueOrFalse = false;
-  }
-
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secondArray[i]) {
-      trueOrFalse = false;
-      break;
-    }
-  }
-  let result = (trueOrFalse ? console.log("The two arrays DO match!") : console.log("The two arrays don't match!"));
-  return result;
-};
-
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -26,6 +10,14 @@ const eqArrays = function(firstArray, secondArray) {
   }
 
   return true;
+};
+
+const assertArraysEqual = function(firstArray, secondArray) {
+  if (eqArrays(firstArray, secondArray) === true) {
+    console.log("The two arrays DO match!");
+  } else {
+    console.log("The two arrays DON'T match!");
+  }
 };
 
 const without = function(source, itemsToRemove) {
