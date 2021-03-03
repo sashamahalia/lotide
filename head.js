@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 const head = function(array) {
   switch (array[0]) {
   case '':
-  return undefined; 
+    return undefined;
   default:
     return array[0];
   }
