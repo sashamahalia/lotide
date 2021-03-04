@@ -22,23 +22,24 @@ const assertArraysEqual = function(firstArray, secondArray) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  
+
+  for (const index in sentence) {
+    if (sentence[index] === ' ') {
+      continue;
+    } else if (sentence[index] in results) {
+      results[sentence[index]].push(Number(index));
+    } else {
+      results[sentence[index]] = [Number(index)];
+    }
+  }
   return results;
 };
 
-let testCase = letterPositions('hello')
+// test code
+// let testCase = letterPositions('hello')
 
-const wordies = 'he llo';
-
-for (char in wordies) {
-  if (wordies[char] === ' ') {
-    char++
-  } else {
-    console.log(char);
-  }
-}
 
 // console.log(assertArraysEqual(testCase.h, [0]));
 // console.log(assertArraysEqual(testCase.e, [1]));
 // console.log(assertArraysEqual(testCase.l, [2, 3]));
-// console.log(assertArraysEqual(testCase.l, [4]));
+// console.log(assertArraysEqual(testCase.o, [4]));
