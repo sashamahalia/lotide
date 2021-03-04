@@ -14,9 +14,9 @@ const eqArrays = function(firstArray, secondArray) {
 
 const assertArraysEqual = function(firstArray, secondArray) {
   if (eqArrays(firstArray, secondArray) === true) {
-    console.log("The two arrays DO match!");
+    console.log(`✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`);
   } else {
-    console.log("The two arrays DON'T match!");
+    console.log(`🛑🛑🛑 Assertion Failed: ${firstArray} !== ${secondArray}`);
   }
 };
 
@@ -38,12 +38,12 @@ const middle = function(array) {
 
 //Test Code
 
-assertArraysEqual([2, 3], middle([1, 2, 3, 4])); //should match
-assertArraysEqual([2], middle([1, 2, 3])); // should match
-assertArraysEqual([2, 3], middle([1, 2, 3, 4, 5])); // should not match
-assertArraysEqual(['b'], middle(['a', 'b', 'c'])); // should match
-assertArraysEqual(['b'], middle(['a', 'b', 'c', 'd'])); // should not match
-assertArraysEqual([undefined], middle([NaN, undefined, null])); // should match
-assertArraysEqual([], middle([])); // should match
+// assertArraysEqual([2, 3], middle([1, 2, 3, 4])); //should match
+// assertArraysEqual([2], middle([1, 2, 3])); // should match
+// assertArraysEqual([2, 3], middle([1, 2, 3, 4, 5])); // should not match
+// assertArraysEqual(['b'], middle(['a', 'b', 'c'])); // should match
+// assertArraysEqual(['b'], middle(['a', 'b', 'c', 'd'])); // should not match
+// assertArraysEqual([undefined], middle([NaN, undefined, null])); // should match
+// assertArraysEqual([], middle([])); // should match
 
 
