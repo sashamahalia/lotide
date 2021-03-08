@@ -1,11 +1,6 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😇😇😇 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😭😭😭 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
+//return everything except the head (first item) of an array
 const tail = function(array) {
   const newArray = [];
   for (let item of array) {
@@ -14,4 +9,7 @@ const tail = function(array) {
   newArray.splice(0, 1);
   return newArray;
 };
+
+module.exports = tail;
+
 
