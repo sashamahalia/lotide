@@ -40,3 +40,5 @@ const findKey = (object, callback) => {
 
 // const test3 = findKey(obj1, x => Array.isArray(x.arrayOne));
 // assertEqual(test3, 'b');
+
+module.exports = findKey;

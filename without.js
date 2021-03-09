@@ -30,3 +30,4 @@ const without = function(source, itemsToRemove) {
   return filterArray;
 };
 
+module.exports = without;

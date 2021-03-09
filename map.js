@@ -41,3 +41,5 @@ const map = (array, callback) => {
 // const nums = [2, 4, 6, 8];
 // const timesTen = map(nums, num => num * 10);
 // assertArraysEqual(timesTen, [20, 40, 60, 80]);
+
+module.exports = map;

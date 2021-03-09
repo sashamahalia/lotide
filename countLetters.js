@@ -19,7 +19,9 @@ const countLetters = function(setence) {
     }
   }
   return result;
-}
+};
+
+module.exports = countLetters;
 
 //test cases
 // const testCase = countLetters('this is a string');

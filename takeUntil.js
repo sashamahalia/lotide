@@ -46,3 +46,5 @@ const takeUntil = (array, callback) => {
 // const results3 = takeUntil(loona, x => x.includes(' '));
 // assertArraysEqual(results3, ['heejin', 'hyunjin', 'haseaul', 'yeojin', 'vivi',]);
 
+module.exports = takeUntil;
+
