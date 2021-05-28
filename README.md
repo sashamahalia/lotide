@@ -29,6 +29,7 @@ The following functions are currently implemented:
 * `head`: returns the first item in an array
 * `tail`: returns a new array with all items from the input array except for the first item
 * `countLetters`: returns an object with the letters of an input phrase as keys, and the number of times each letter has been used as each key's value
+* `flatten` returns a single array flattened from any number of nested arrays.
 * `assertArraysEqual`: A manual test that logs a pass or failure message bassed on two arrays being equal or not
 * `assertEqual`: A manual test that logs a pass or failure message bassed on asserting equality between two primative data type
 * `assertObjectsEqual`: A manual test that logs a pass or failure message bassed on asserting equality between two primative objects
